@@ -1,0 +1,353 @@
+body {
+    background: #121212;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-family: 'brandon-grotesque', sans-serif;
+  }
+  
+  .preloader-container {
+    width: 300px;
+    height: auto;
+  }
+  
+  .preloader-div {
+    position: absolute;
+    z-index: 5;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    margin-top: 145px;
+    width: 250px;
+    height: 3px;
+    background: #fff;
+    opacity: 0;
+    transform-origin: top;
+    transform: rotate(0);
+    animation: diag 3.5s infinite;
+  }
+  
+  .preloader-svg {
+    position: absolute;
+    transform: scale(0.45);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  
+  .preloader-e {
+    animation: animate-e 3.5s infinite;
+  }
+  
+  .preloader-x1 {
+    animation: animate-x1 3.5s infinite;
+  }
+  
+  .preloader-x2 {
+    animation: animate-x2 3.5s infinite;
+  }
+  
+  /*=======================================
+         START PRELOADER DIAMOND STYLES
+    =======================================*/
+  
+  .diamond-container-top {
+    width: 300px;
+    height: 146px;
+    margin-top: 0;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .preloader-diamond-wrapper-top {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 180px;
+    opacity: 0;
+    animation: diamond-top 3.5s infinite;
+  }
+  
+  .preloader-diamond-top {
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+  
+  .preloader-text-top {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.35em;
+    color: #333;
+    transform: rotate(-45deg) translateX(-25%) translateY(87px);
+  }
+  
+  /*=======*/
+  
+  .diamond-container-bottom {
+    width: 300px;
+    height: 146px;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 146px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .preloader-diamond-wrapper-bottom {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: -215px;
+    opacity: 0;
+    animation: diamond-bottom 3.5s infinite;
+  }
+  
+  .preloader-diamond-bottom {
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+  
+  .preloader-text-bottom {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1.35em;
+    color: #333;
+    transform: rotate(-45deg) translateX(-25%) translateY(86px);
+  }
+  
+  
+  
+  @keyframes animate-e {
+    0% {
+      transform: scale(0.75) translate3d(-25px,0,-150px);
+      filter: blur(5px);
+      opacity: 0;
+    }
+    
+    20% {
+      transform: scale(0.45) translate3d(0,0,0);
+      filter: blur(0);
+      opacity: 1;
+    }
+    
+    50% {
+      transform: scale(0.45) translate3d(0,0,0);
+      filter: blur(0);
+      opacity: 1;
+    }
+    
+    80% {
+      transform: scale(0.45) translate3d(0,0,0);
+      filter: blur(0);
+      opacity: 0;
+    }
+    
+     100% {
+      transform: scale(0.45) translate3d(0,0,0);
+      filter: blur(0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes diag {
+    0% {
+      width: 0;
+      transform: rotate(62deg) translateX(0) translateY(0);
+      opacity: 1;
+    }
+  
+    17% {
+      width: 0;
+      transform: rotate(62deg) translateX(8px) translateY(-5.81px);
+      opacity: 1;
+    }
+  
+    27% {
+      width: 250px;
+      transform: rotate(62deg) translateX(8px) translateY(-5.81px);
+      opacity: 1;
+    }
+  
+    32% {
+      width: 250px;
+      transform: rotate(62deg) translateX(8px) translateY(-5.81px);
+      opacity: 1;
+    }
+  
+    50% {
+      width: 250px;
+      transform: rotate(0) translateX(0) translateY(0);
+      opacity: 1;
+    }
+  
+    70% {
+      width: 100px;
+      transform: rotate(0) translateX(0) translateY(0);
+      opacity: 0;
+    }
+  
+    80% {
+      width: 100px;
+      transform: rotate(0) translateX(0) translateY(0);
+      opacity: 0;
+    }
+    
+    100% {
+      width: 0;
+      transform: rotate(0) translateX(0) translateY(0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animate-x1 {
+      0% {
+        transform: scale(0.35) translate3d(10px,0,150px);
+        filter: blur(5px);
+        opacity: 0;
+      }
+  
+      17% {
+        transform: scale(0.35) translate3d(30px,0,150px);
+        filter: blur(5px);
+        opacity: 0;
+      }
+      
+      28% {
+        transform: scale(0.45) translate3d(0,0,0);
+        filter: blur(0);
+        opacity: 1;
+      }
+      
+      50% {
+        transform: scale(0.45) translate3d(0,0,0);
+        filter: blur(0);
+        opacity: 1;
+      }
+      
+      80% {
+        transform: scale(0.45) translate3d(0,0,0);
+        filter: blur(0);
+        opacity: 0;
+      }
+      
+       100% {
+        transform: scale(0.45) translate3d(0,0,0);
+        filter: blur(0);
+        opacity: 0;
+      }
+  }
+  
+  @keyframes animate-x2 {
+      0% {
+        transform: scale(0.55) translate3d(-30px,0,-150px);
+        filter: blur(5px);
+        opacity: 0;
+      }
+  
+      17% {
+        transform: scale(0.55) translate3d(-30px,0,-150px);
+        filter: blur(5px);
+        opacity: 0;
+      }
+      
+      28% {
+        transform: scale(0.45) translate3d(0,0,0);
+        filter: blur(0);
+        opacity: 1;
+      }
+      
+      50% {
+        transform: scale(0.45) translate3d(0,0,0);
+        filter: blur(0);
+        opacity: 1;
+      }
+      
+      80% {
+        transform: scale(0.45) translate3d(0,0,0);
+        filter: blur(0);
+        opacity: 0;
+      }
+      
+       100% {
+        transform: scale(0.45) translate3d(0,0,0);
+        filter: blur(0);
+        opacity: 0;
+      }
+  }
+  
+  
+  @keyframes diamond-top {
+    0% {
+      margin-top: 180px;
+      opacity: 0;
+    }
+    
+    49% {
+      margin-top: 180px;
+      opacity: 0;
+    }
+  
+    50% {
+      margin-top: 180px;
+      opacity: 1;
+    }
+  
+    72% {
+      margin-top: 55px;
+      opacity: 1;
+    }
+  
+    90% {
+      margin-top: 55px;
+      opacity: 1;
+    }
+  
+    100% {
+      margin-top: 55px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes diamond-bottom {
+    0% {
+      margin-top: -215px;
+      opacity: 0;
+    }
+    
+    49% {
+      margin-top: -215px;
+      opacity: 0;
+    }
+  
+    50% {
+      margin-top: -215px;
+      opacity: 1;
+    }
+  
+    72% {
+      margin-top: -90px;
+      opacity: 1;
+    }
+  
+    90% {
+      margin-top: -90px;
+      opacity: 1;
+    }
+  
+    100% {
+      margin-top: -90px;
+      opacity: 0;
+    }
+  }
+  
+  
+  
